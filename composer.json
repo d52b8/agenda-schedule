@@ -1,0 +1,32 @@
+{
+    "name": "d52b8/agenda-schedule",
+    "description": "Simple Agenda Schedule",
+    "keywords": [
+        "agenda",
+        "schedule"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "d52b8",
+            "email": "d52b8@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "ext-mongodb": "^1.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "d52b8\\agenda\\": "lib/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit test"
+    }
+}
