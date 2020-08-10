@@ -25,6 +25,7 @@ $config = [
     ]
 ];
 $schedule = new Schedule($config);
+$schedule->setPriority(Schedule::PRIORITY_HIGH);
 ```
 
 ## How to test?
