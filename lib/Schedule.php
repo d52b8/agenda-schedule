@@ -1,6 +1,8 @@
 <?php
 namespace d52b8\agenda;
 
+use DateTime;
+
 class Schedule
 {
     public $name;
@@ -34,7 +36,7 @@ class Schedule
         if (!extension_loaded('mongodb')) {
             throw new \RuntimeException("Extension <mongodb> is not loaded", 1);
         }
-        return new \MongoDB\BSON\UTCDateTime(time());
+        return new \MongoDB\BSON\UTCDateTime(time() * 1000);
     }
 
     public function setPriority($priority) {
